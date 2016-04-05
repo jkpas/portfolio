@@ -1,0 +1,240 @@
+
+@media screen and (min-width: 770px) and (max-width: 940px){
+	.block2{
+		padding-bottom: 60px;
+	}
+	.block3 .slider .bx-wrapper .bx-prev{
+		left: 10px;
+	}
+	.block3 .slider .bx-wrapper .bx-next{
+		right: 10px;
+	}
+	.block4 .masters .bx-wrapper .bx-prev{
+		left: 10px;
+	}
+	.block4 .masters .bx-wrapper .bx-next{
+		right: 10px;
+	}
+	.footer{
+		height: auto;
+		padding-bottom: 35px;
+	}
+	.footer .social ul li{
+		position: relative;
+		padding-left: 55px;
+	}
+	.footer .social ul li:nth-child(1){
+		height: 41px;
+	}
+	.footer .social ul li:nth-child(1):before,
+	.footer .social ul li:nth-child(2):before,
+	.footer .social ul li:nth-child(3):before{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.two-click ul li a {
+	    padding-left: 0;
+	    display: inline;
+	    text-align: center;
+	}
+		.two-click ul li a:before {
+	    content: "";
+	    position: absolute;
+	    background: url("../img/arrow-down.png") no-repeat;
+	    width: 16px;
+	    height: 9px;
+	    top: 6px;
+	    left: -30px;
+	}
+
+}
+@media screen and (min-width: 320px) and (max-width: 770px){
+	.header .logo{
+		margin: 0 auto;
+		display: block;
+	}
+	.header .org-name{
+		margin-left: 0;
+		padding: 0 20px;
+		text-align: center;
+	}
+	.header .contacts{
+		width: 100%;
+	    margin: 10px 0 0;
+	    text-align: center;
+	}
+	.block1 .action .losung{
+		width: 317px;
+	}
+	.block1 .action .adv ul{
+		margin-left: 65px;
+	}
+	.block2 {
+	    background-size: contain;
+	}
+	.block2 h2{
+		width: 320px;
+	}
+	.block2 .reasons .one{
+		margin-right: 0;
+	}
+	.block2 .reasons .three{
+		margin-right: 0;
+	}
+	.block2 .reasons .four{
+		margin-right: 0;
+	}
+	.block2{
+		padding-bottom: 30px;
+	}
+	.block3{
+		height: auto;
+		background-size: cover;
+	}
+	.block3 .slider .bx-wrapper .bx-prev{
+		left: 10px;
+	}
+	.block3 .slider .bx-wrapper .bx-next{
+		right: 10px;
+	}
+	.block3 p{
+		padding: 0 15px;
+	}
+	.block4{
+		text-align: center;
+	}
+	.block4 h2:before{
+		background: rgba(0, 0, 0, 0) url("../img/rupor.png") no-repeat;
+		background-size: cover;
+	    content: "";
+	    display: inline-block;
+	    height: 44px;
+	    margin-right: 15px;
+	    vertical-align: middle;
+	    width: 50px;
+	}
+	.block4 h2{
+		font-size: 18px;
+		float: none;
+		margin: 0 auto 45px;
+	}
+	.block4 .masters .photo{
+		margin-right: 0;
+	}
+	.block4 .masters p{
+		padding: 20px;
+	}
+	.block4 .masters .bx-wrapper .bx-prev{
+		left: 10px;
+	}
+	.block4 .masters .bx-wrapper .bx-next{
+		right: 10px;
+	}
+	.block5 h2{
+		padding: 0 20px;
+	}
+	.footer{
+		height: auto;
+		padding-top: 25px;
+		text-align: center;
+		overflow: hidden;
+	}
+	.footer .adress,
+	.footer .logo{
+		width: 100%;
+		display: block;
+		padding: 0;
+		height: auto;
+		border: none;
+	}
+	.footer .social ul li{
+		width: 100%;
+		margin: 0 auto 17px;
+	}
+	.footer .logo{
+		margin: 15px 0;
+	}
+	.footer .social{
+		width: 90%;
+		text-align: left;
+		display: block;
+		padding: 0;
+		height: auto;
+		border: none;
+	}
+
+	.footer .social ul li span{
+		text-align: left;
+		margin-left: 100px;
+	}
+
+	.thank-page .content .text-block {
+	    padding: 0 10px 10px;
+	}
+	.thank-page .content h2 {
+	    font-size: 30px;
+	}
+	.form-page .content h2 {
+	    font-size: 30px;
+	}
+	.form-page .content .payment ul li {
+	    margin: 0 10px 20px 10px;
+	    vertical-align: top;
+	}
+	.form-page .content .payment ul li:nth-child(5) {
+	    margin: 0 10px 20px 10px;
+	}
+	.form-page .content .payment ul li:nth-child(10) {
+	    margin: 0 10px 20px 10px;
+	}
+	.two-click ul li a {
+	    padding-left: 0;
+	    display: inline;
+	    text-align: center;
+	}
+	.two-click ul li a:before {
+	    content: "";
+	    position: absolute;
+	    background: url("../img/arrow-down.png") no-repeat;
+	    width: 16px;
+	    height: 9px;
+	    top: 6px;
+	    left: -30px;
+	}
+	.two-click ul .two-click-li-active a {
+	    padding-left: 0;
+	    display: inline;
+	    text-align: center;
+	}
+	.two-click ul .two-click-li-active a:before {
+	    content: "";
+	    position: absolute;
+	    background: url("../img/arrow-down.png") no-repeat;
+	    width: 16px;
+	    height: 9px;
+	    top: 6px;
+	    left: -30px;
+	}
+	.two-click h2 {
+	    font-size: 30px;
+	}
+	.faq {
+	    background-size: cover;
+	}
+	.block2 h2 {
+	    width: 300px;
+	}
+	.faq ul li img {
+	    float: none; 
+	    margin-right: 0;
+	    display: inline; 
+	    text-align: center;
+	    margin-bottom: 10px;
+	}
+	.faq ul li p {
+	    text-align: center;
+	    display: block;
+	}
+}
+

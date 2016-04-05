@@ -1,0 +1,1505 @@
+@charset "UTF-8";
+html, body, div, span, .header .org-name a, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+textarea, input {
+  outline: medium none;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: medium none;
+}
+
+input:active, textarea:active {
+  outline: medium none;
+}
+
+@font-face {
+  font-family: 'CenturyGothicBold';
+  src: url("../fonts/centurygothicbold.eot");
+  src: url("../fonts/centurygothicbold.eot") format("embedded-opentype"), url("../fonts/centurygothicbold.woff2") format("woff2"), url("../fonts/centurygothicbold.woff") format("woff"), url("../fonts/centurygothicbold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'centurygothicregular';
+  src: url("../fonts/centurygothicregular.eot");
+  src: url("../fonts/centurygothicregular.eot") format("embedded-opentype"), url("../fonts/centurygothicregular.woff") format("woff"), url("../fonts/centurygothicregular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url("../fonts/myriadproregular.eot");
+  src: url("../fonts/myriadproregular.eot") format("embedded-opentype"), url("../fonts/myriadproregular.woff") format("woff"), url("../fonts/myriadproregular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'ConvLobsterRegular';
+  src: url("../fonts/lobster-regular.eot");
+  src: local("тШ║"), url("../fonts/lobster-regular.woff") format("woff"), url("../fonts/lobster-regular.ttf") format("truetype"), url("../fonts/lobster-regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  color: #000000;
+  font-family: "CenturyGothicRegular", sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+.center {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header .logo {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 51px;
+  max-height: 65px;
+  margin-left: 18px;
+  float: left;
+}
+.header .logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  padding: 25px 0 15px;
+  clear: both;
+  overflow: hidden;
+}
+.header .org-name {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 22px;
+  float: left;
+}
+.header .org-name h1 {
+  font-family: "CenturyGothicBold";
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+.header .org-name h1 span, .header .org-name h1 a {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  display: block;
+}
+.header .org-name span, .header .org-name a {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "CenturyGothicRegular";
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 2px;
+}
+.header .org-name a:hover {
+  text-decoration: none;
+}
+.header .contacts {
+  float: right;
+  text-align: right;
+  margin: 0 20px 0 0;
+}
+.header .contacts span, .header .contacts .org-name a, .header .org-name .contacts a {
+  display: block;
+  font-family: "CenturyGothicBold";
+  font-size: 30px;
+}
+.header .contacts a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.block1 {
+  background: url(../img/block1-bg.png) no-repeat top center;
+  background-size: cover;
+  clear: both;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+.block1 .action {
+  float: right;
+  text-align: center;
+  padding-top: 90px;
+}
+.block1 .action .adv {
+  margin: 26px 0 40px;
+}
+.block1 .action .adv ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 30px;
+}
+.block1 .action .adv ul li {
+  color: #fff;
+  font-family: "CenturyGothicRegular";
+  font-size: 18px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.prices span, .prices .header .org-name a, .header .org-name .prices a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "CenturyGothicBold";
+  position: relative;
+}
+.prices span b, .prices .header .org-name a b, .header .org-name .prices a b {
+  font-weight: normal;
+  font-family: inherit;
+  font-size: 18px;
+  color: inherit;
+}
+.prices .old {
+  margin-right: 10px;
+}
+.prices .old:after {
+  position: absolute;
+  content: '';
+  width: 89px;
+  height: 36px;
+  background: url(../img/old-price.png) no-repeat top center;
+  top: 4px;
+  left: 2px;
+}
+
+.light-btn {
+  display: block;
+  width: 267px;
+  height: 90px;
+  background: url(../img/light-btn.png) no-repeat top center;
+  margin: 0 auto;
+  position: relative;
+}
+.light-btn:after {
+  content: '';
+  display: block;
+  width: 242px;
+  height: 31px;
+  background: url(../img/light-btn-after.png) no-repeat top center;
+  position: absolute;
+  top: 44px;
+  left: -1px;
+}
+
+.block1-slogan {
+  clear: both;
+  width: 100%;
+  border-top: 1px solid #ffffff;
+  padding: 25px 0 40px;
+}
+.block1-slogan p {
+  font-family: "ConvLobsterRegular";
+  font-size: 24px;
+  color: #ffffff;
+  font-style: italic;
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.block2 {
+  text-align: center;
+  padding: 30px 0 250px;
+  background: url(../img/block2-bg.png) no-repeat top right, #fff;
+  position: relative;
+  z-index: 5;
+  margin-top: -5px;
+}
+.block2 h2 {
+  text-transform: uppercase;
+  font-family: "CenturyGothicBold";
+  font-size: 24px;
+  width: 440px;
+  margin: 0 auto;
+}
+.block2 h2:after {
+  content: '';
+  width: 100%;
+  height: 6px;
+  display: block;
+  background: url(../img/dot.png) repeat-x top left;
+  margin-top: 10px;
+}
+.block2 h2 span, .block2 h2 .header .org-name a, .header .org-name .block2 h2 a {
+  display: block;
+  font-size: 24px;
+  color: inherit;
+  font-family: inherit;
+}
+.block2 h2 span:first-child, .block2 h2 .header .org-name a:first-child, .header .org-name .block2 h2 a:first-child {
+  font-size: 30px;
+}
+.block2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.block2 .reasons span, .block2 .reasons .header .org-name a, .header .org-name .block2 .reasons a {
+  font-family: "CenturyGothicRegular";
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+}
+.block2 .reasons .res {
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.block2 .reasons .one {
+  width: 185px;
+  height: 183px;
+  background-image: url(../img/res1.png);
+  margin-top: 22px;
+  margin-right: 85px;
+}
+.block2 .reasons .one span, .block2 .reasons .one .header .org-name a, .header .org-name .block2 .reasons .one a {
+  color: #ff3840;
+  width: 80px;
+  margin-top: 52px;
+}
+.block2 .reasons .two {
+  width: 206px;
+  height: 183px;
+  background-image: url(../img/res2.png);
+  margin-top: 22px;
+}
+.block2 .reasons .two span, .block2 .reasons .two .header .org-name a, .header .org-name .block2 .reasons .two a {
+  color: #ff7ee2;
+  width: 70px;
+  margin-top: 42px;
+  margin-left: 56px;
+}
+.block2 .reasons .three {
+  width: 208px;
+  height: 182px;
+  background-image: url(../img/res3.png);
+  margin-top: 14px;
+  margin-right: 52px;
+}
+.block2 .reasons .three span, .block2 .reasons .three .header .org-name a, .header .org-name .block2 .reasons .three a {
+  color: #3dabff;
+  width: 92px;
+  margin-top: 56px;
+  margin-left: 46px;
+}
+.block2 .reasons .four {
+  width: 198px;
+  height: 184px;
+  background-image: url(../img/res4.png);
+  margin-top: 14px;
+  margin-right: 40px;
+}
+.block2 .reasons .four span, .block2 .reasons .four .header .org-name a, .header .org-name .block2 .reasons .four a {
+  color: #ff8833;
+  width: 78px;
+  margin-top: 72px;
+  margin-left: 50px;
+}
+.block2 .reasons .five {
+  width: 256px;
+  height: 225px;
+  background-image: url(../img/res5.png);
+  margin-top: 14px;
+}
+.block2 .reasons .five span, .block2 .reasons .five .header .org-name a, .header .org-name .block2 .reasons .five a {
+  color: #46ffdf;
+  font-family: "CenturyGothicBold";
+  font-size: 21px;
+  width: 122px;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.two-click {
+  text-align: center;
+  padding: 30px 0;
+}
+.two-click h2 {
+  text-transform: uppercase;
+  font-family: "CenturyGothicBold";
+  font-size: 48px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.two-click ul {
+  font-size: 0;
+  list-style-image: none;
+}
+.two-click ul li {
+  margin-bottom: 12px;
+}
+.two-click ul li a {
+  text-transform: uppercase;
+  font-family: "CenturyGothicRegular";
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+  text-align: left;
+  padding-left: 36%;
+  display: block;
+}
+.two-click ul li a:hover {
+  color: #4262ff;
+}
+.two-click ul li a:before {
+  content: "";
+  position: absolute;
+  background: url("../img/arrow-down.png") no-repeat;
+  width: 16px;
+  height: 9px;
+  top: 6px;
+  left: 300px;
+}
+.two-click ul li .product {
+  display: none;
+}
+.two-click ul .two-click-li-active {
+  text-align: center;
+  margin-bottom: 12px;
+  padding-left: 0;
+}
+.two-click ul .two-click-li-active a {
+  text-transform: uppercase;
+  font-family: "CenturyGothicRegular";
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+  text-align: left;
+  padding-left: 36%;
+  display: block;
+}
+.two-click ul .two-click-li-active a:hover {
+  color: #4262ff;
+}
+.two-click ul .two-click-li-active a:before {
+  content: "";
+  position: absolute;
+  background: url("../img/arrow-up.png") no-repeat;
+  width: 16px;
+  height: 9px;
+  top: 6px;
+  left: 300px;
+}
+.two-click ul .two-click-li-active .product {
+  display: block;
+}
+.two-click ul .two-click-li-active .product ul {
+  font-size: 0;
+  list-style-image: none;
+  text-align: center;
+  padding: 45px 12% 10px;
+}
+.two-click ul .two-click-li-active .product ul li {
+  display: inline-block;
+  width: 205px;
+  height: 275px;
+  margin: 0 15px 55px;
+  padding-left: 0;
+  text-align: center;
+}
+.two-click ul .two-click-li-active .product ul li .prod-img-wrap {
+  height: 140px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.two-click ul .two-click-li-active .product ul li span, .two-click ul .two-click-li-active .product ul li .header .org-name a, .header .org-name .two-click ul .two-click-li-active .product ul li a {
+  text-align: center;
+  color: #273650;
+  font-size: 18px;
+  font-family: "CenturyGothicBold";
+  margin-bottom: 5px;
+  display: block;
+}
+.two-click ul .two-click-li-active .product ul li a {
+  text-transform: none;
+  float: right;
+  color: #003cff;
+  font-family: "CenturyGothicRegular";
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding-right: 24px;
+  text-decoration: underline;
+}
+.two-click ul .two-click-li-active .product ul li a:after {
+  content: "";
+  position: absolute;
+  background: url("../img/double-arrow.png") no-repeat;
+  width: 14px;
+  height: 7px;
+  right: 9px;
+  top: 6px;
+}
+.two-click ul .two-click-li-active .product ul li a:before {
+  content: none;
+}
+.two-click ul .two-click-li-active .product ul li .prod-info {
+  border-top: 2px dotted #273650;
+  padding-top: 10px;
+  clear: both;
+  text-align: left;
+}
+.two-click ul .two-click-li-active .product ul li .prod-info span, .two-click ul .two-click-li-active .product ul li .prod-info .header .org-name a, .header .org-name .two-click ul .two-click-li-active .product ul li .prod-info a {
+  color: #273650;
+  font-family: "CenturyGothicRegular";
+  display: inline-block;
+}
+.two-click ul .two-click-li-active .product ul li .prod-info span:first-child, .two-click ul .two-click-li-active .product ul li .prod-info .header .org-name a:first-child, .header .org-name .two-click ul .two-click-li-active .product ul li .prod-info a:first-child {
+  font-size: 14px;
+  padding-right: 22px;
+}
+.two-click ul .two-click-li-active .product ul li .prod-info span:last-child, .two-click ul .two-click-li-active .product ul li .prod-info .header .org-name a:last-child, .header .org-name .two-click ul .two-click-li-active .product ul li .prod-info a:last-child {
+  font-size: 18px;
+  padding-right: 0;
+}
+.two-click ul .two-click-li-active .product ul li .prod-info a {
+  float: right;
+  text-decoration: none;
+  padding-right: 0;
+}
+.two-click ul .two-click-li-active .product ul li .prod-info a:after {
+  content: none;
+}
+
+.faq {
+  text-align: center;
+  padding: 50px 0 60px;
+  background: url("../img/faq-bg.png") no-repeat;
+}
+.faq h2 {
+  text-transform: uppercase;
+  font-family: "CenturyGothicBold";
+  font-size: 30px;
+  color: #000000;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.faq h2 span, .faq h2 .header .org-name a, .header .org-name .faq h2 a {
+  display: block;
+  font-family: "CenturyGothicBold";
+  font-size: 30px;
+  color: #000000;
+}
+.faq ul {
+  font-size: 0;
+  list-style-image: none;
+  max-width: 550px;
+  margin: 0 auto;
+}
+.faq ul li {
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: table;
+}
+.faq ul li img {
+  float: left;
+  margin-right: 20px;
+}
+.faq ul li p {
+  overflow: hidden;
+  font-family: "CenturyGothicRegular";
+  font-size: 18px;
+  color: #000000;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+.faq ul li p span, .faq ul li p .header .org-name a, .header .org-name .faq ul li p a {
+  display: block;
+  margin-bottom: 25px;
+}
+
+/****BXSLIDER START****/
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  *zoom: 1;
+}
+
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+
+/** THEME
+===================================*/
+.bx-wrapper .bx-viewport {
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+
+/* LOADER */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url(../img/bx_loader.gif) center center no-repeat #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+/* PAGER */
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #666;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url(../img/controls.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url(../img/controls.png) no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url(../img/controls.png) -86px -11px no-repeat;
+  margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+  background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url(../img/controls.png) -86px -44px no-repeat;
+  margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+  background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+.bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666 \9;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+
+.bx-wrapper .bx-caption span, .bx-wrapper .bx-caption .header .org-name a, .header .org-name .bx-wrapper .bx-caption a {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
+
+.block3 {
+  background: url(../img/block3-bg.png) no-repeat top center;
+  height: 754px;
+  position: relative;
+  margin-top: -5px;
+  z-index: 10;
+  padding-top: 35px;
+  text-align: center;
+}
+.block3 h2 {
+  text-transform: uppercase;
+  font-family: "CenturyGothicRegular";
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.block3 .look {
+  text-transform: uppercase;
+  font-family: "CenturyGothicRegular";
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+.block3 .slider {
+  margin: 20px 0;
+}
+.block3 .slider .bx-wrapper .bx-prev {
+  left: -74px;
+  background: url(../img/arr.png) no-repeat 0 0;
+}
+.block3 .slider .bx-wrapper .bx-next {
+  right: -74px;
+  background: url(../img/arr.png) no-repeat -20px 0;
+}
+.block3 .slider .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  outline: 0;
+  width: 20px;
+  height: 30px;
+}
+.block3 p {
+  color: #fff;
+  font-family: "CenturyGothicRegular";
+  text-align: justify;
+  max-width: 756px;
+  margin: 0 auto 16px;
+  font-size: 14px;
+}
+.block3 .text {
+  max-width: 580px;
+  margin: 36px auto 34px;
+}
+.block3 .text span, .block3 .text .header .org-name a, .header .org-name .block3 .text a {
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  font-family: "CenturyGothicBold";
+}
+.block3 .light-btn {
+  margin-top: 35px;
+}
+
+.block4 {
+  padding-top: 52px;
+}
+.block4 h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "CenturyGothicBold";
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  margin: 0 130px 45px 0;
+}
+.block4 h2:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 84px;
+  height: 73px;
+  background: url(../img/rupor.png) no-repeat center center;
+  margin-right: 32px;
+}
+.block4 h2:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.block4 .masters {
+  display: block;
+  float: none;
+  clear: both;
+}
+.block4 .masters .bx-wrapper .bx-prev {
+  left: -93px;
+  background: url(../img/arr2.png) no-repeat 0 0;
+}
+.block4 .masters .bx-wrapper .bx-next {
+  right: -93px;
+  background: url(../img/arr2.png) no-repeat -20px 0;
+}
+.block4 .masters .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  outline: 0;
+  width: 20px;
+  height: 30px;
+}
+.block4 .masters .photo {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 35px;
+}
+.block4 .masters .photo .mast {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  border: 5px solid #000;
+  overflow: hidden;
+  margin: 0 auto 16px;
+}
+.block4 .masters .photo .mast img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.block4 .masters .photo span, .block4 .masters .photo .header .org-name a, .header .org-name .block4 .masters .photo a {
+  font-size: 18px;
+  font-family: "CenturyGothicBold";
+}
+.block4 .masters .photo a {
+  display: block;
+  font-size: 14px;
+}
+.block4 .masters .photo a:hover {
+  text-decoration: none;
+}
+.block4 .masters p {
+  max-width: 500px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  font-family: "MyriadProRegular";
+  text-align: justify;
+}
+
+.block5 {
+  padding-top: 50px;
+  margin-top: 40px;
+  background: url(../img/volni.png) repeat-x top center;
+}
+.block5 h2 {
+  color: #000000;
+  font-size: 24px;
+  font-family: 'CenturyGothicBold';
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 95px;
+}
+.block5 .price {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: #000000;
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-family: 'CenturyGothicBold';
+}
+.block5 .price small {
+  font-size: 18px;
+  color: #000000;
+  font-family: 'CenturyGothicBold';
+  text-transform: uppercase;
+}
+.block5 .price span, .block5 .price .header .org-name a, .header .org-name .block5 .price a {
+  font-size: 30px;
+  color: #000000;
+  position: relative;
+  font-family: 'CenturyGothicBold';
+}
+.block5 .price span:before, .block5 .price .header .org-name a:before, .header .org-name .block5 .price a:before {
+  background: transparent url("../img/old-price.png") no-repeat scroll center top;
+  content: "";
+  height: 36px;
+  left: 2px;
+  position: absolute;
+  top: 4px;
+  width: 89px;
+}
+.block5 a {
+  background: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  height: 37px;
+  width: 260px;
+  margin: 35px auto 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'CenturyGothicBold';
+  text-align: center;
+  text-decoration: none;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.footer {
+  width: 100%;
+  height: 278px;
+  margin-top: 45px;
+  padding-top: 70px;
+  background: url(../img/footer.jpg) repeat-x top center;
+  background-size: cover;
+}
+.footer .adress {
+  width: 30%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 125px;
+  border-right: 1px solid #ffffff;
+}
+.footer .adress p {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'MyriadProRegular';
+  font-weight: 300;
+}
+.footer .adress p span, .footer .adress p .header .org-name a, .header .org-name .footer .adress p a {
+  color: #ffffff;
+  display: block;
+  font-size: 24px;
+  font-family: 'MyriadProRegular';
+  font-weight: 300;
+}
+.footer .logo {
+  width: 30%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 125px;
+  text-align: center;
+  border-right: 1px solid #ffffff;
+}
+.footer .logo a {
+  display: inline-block;
+}
+.footer .logo img {
+  width: 202px;
+}
+.footer .social {
+  width: 30%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 125px;
+  margin-left: 20px;
+  padding-left: 21px;
+}
+.footer .social ul {
+  list-style: none;
+}
+.footer .social ul li {
+  display: block;
+  margin-bottom: 17px;
+  font-family: 'MyriadProRegular';
+  font-size: 18px;
+  font-weight: 300;
+  width: 100%;
+  color: #ffffff;
+}
+.footer .social ul li:nth-child(1):before {
+  content: '';
+  width: 41px;
+  height: 41px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  background: url(../img/soc1.png) no-repeat;
+}
+.footer .social ul li:nth-child(2):before {
+  content: '';
+  width: 36px;
+  height: 28px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  background: url(../img/soc2.png) no-repeat;
+}
+.footer .social ul li:nth-child(3):before {
+  content: '';
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  background: url(../img/soc3.png) no-repeat;
+}
+.footer .social ul li a {
+  font-family: 'MyriadProRegular';
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer .social ul li span, .footer .social ul li .header .org-name a, .header .org-name .footer .social ul li a {
+  font-family: 'MyriadProRegular';
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  display: block;
+  line-height: 10px;
+  text-align: right;
+}
+
+.thank-page header {
+  height: 110px;
+  background-color: #000000;
+  padding-top: 15px;
+  text-align: center;
+  position: relative;
+}
+.thank-page header:after {
+  content: "";
+  position: absolute;
+  background: url("../img/black-bottom-wave.png");
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+}
+.thank-page .content {
+  background: url("../img/thank-page-bg.png") no-repeat;
+  padding: 70px 0 100px;
+}
+.thank-page .content h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 48px;
+  font-family: "CenturyGothicBold";
+  margin-bottom: 30px;
+}
+.thank-page .content p {
+  color: #000000;
+  font-size: 18px;
+  font-family: "CenturyGothicRegular";
+  text-align: center;
+  max-width: 620px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.thank-page .content span, .thank-page .content .header .org-name a, .header .org-name .thank-page .content a {
+  margin-bottom: 70px;
+  color: #000000;
+  font-size: 24px;
+  font-family: "CenturyGothicBold";
+  text-align: center;
+  display: block;
+}
+.thank-page .content .bold-uper {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.thank-page .content .text-block {
+  max-width: 620px;
+  padding: 0 140px 10px;
+  border-bottom: 2px solid #0b0c0c;
+  margin: 0 auto 7px;
+}
+.thank-page .content .text-block2 {
+  max-width: 620px;
+  padding: 0 70px 10px;
+  border-bottom: 2px solid #0b0c0c;
+  margin: 0 auto 20px;
+}
+.thank-page .content .social-links {
+  list-style-image: none;
+  font-size: 0;
+  text-align: center;
+}
+.thank-page .content .social-links li {
+  display: inline-block;
+  width: 57px;
+  height: 57px;
+  margin: 0 4px;
+  text-indent: -9999px;
+}
+.thank-page .content .social-links li a {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.thank-page .content .social-links li:nth-child(1) {
+  background: url("../img/sprites.png") no-repeat 0 0;
+}
+.thank-page .content .social-links li:nth-child(2) {
+  background: url("../img/sprites.png") no-repeat -64px 0;
+}
+.thank-page .content .social-links li:nth-child(3) {
+  background: url("../img/sprites.png") no-repeat -129px 0;
+}
+.thank-page .content .social-links li:nth-child(4) {
+  background: url("../img/sprites.png") no-repeat -193px 0;
+}
+.thank-page .footer {
+  margin-top: 0;
+}
+
+.form-page header {
+  height: 110px;
+  background-color: #000000;
+  padding-top: 15px;
+  text-align: center;
+  position: relative;
+}
+.form-page header:after {
+  content: "";
+  position: absolute;
+  background: url("../img/black-bottom-wave.png");
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+}
+.form-page .content {
+  background: url("../img/form-page-bg.png") no-repeat;
+  background-size: auto auto;
+  padding: 45px 0 50px;
+}
+.form-page .content h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 48px;
+  font-family: "CenturyGothicBold";
+  margin-bottom: 35px;
+}
+.form-page .content form {
+  max-width: 360px;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.form-page .content form input, .form-page .content form select, .form-page .content form textarea {
+  border: 1px solid #000000;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 14px;
+  font-family: "CenturyGothicRegular";
+  outline: none;
+}
+.form-page .content form input, .form-page .content form select {
+  height: 30px;
+}
+.form-page .content form input, .form-page .content form textarea {
+  display: block;
+  width: 100%;
+}
+.form-page .content form textarea {
+  height: 94px;
+  padding: 8px 16px 0;
+}
+.form-page .content form input {
+  padding: 0 16px 0;
+}
+.form-page .content form select {
+  display: inline-block;
+  float: right;
+  width: 78%;
+}
+.form-page .content form div {
+  clear: both;
+}
+.form-page .content form .phone span, .form-page .content form .phone .header .org-name a, .header .org-name .form-page .content form .phone a {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 14px;
+  font-family: "CenturyGothicRegular";
+  position: relative;
+  top: 5px;
+}
+.form-page .content form .phone input {
+  float: right;
+  width: 90%;
+}
+.form-page .content form .requirement {
+  position: relative;
+}
+.form-page .content form .requirement:before {
+  content: "";
+  position: absolute;
+  background: url("../img/star.png");
+  width: 11px;
+  height: 11px;
+  top: 10px;
+  left: -22px;
+}
+.form-page .content form span, .form-page .content form .header .org-name a, .header .org-name .form-page .content form a {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 14px;
+  font-family: "CenturyGothicRegular";
+  position: relative;
+  top: 5px;
+}
+.form-page .content .form-footnote {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 14px;
+  font-family: "CenturyGothicRegular";
+  margin-bottom: 35px;
+}
+.form-page .content h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 24px;
+  font-family: "CenturyGothicBold";
+  margin-bottom: 35px;
+  margin-bottom: 15px;
+}
+.form-page .content table {
+  max-width: 580px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.form-page .content table thead {
+  background-color: #000000;
+}
+.form-page .content table thead th {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "CenturyGothicRegular";
+  height: 30px;
+}
+.form-page .content table .column1 {
+  padding-left: 40px;
+  text-align: left;
+}
+.form-page .content table .row1 {
+  height: 50px;
+  vertical-align: bottom;
+}
+.form-page .content table .row-last {
+  height: 50px;
+  vertical-align: top;
+}
+.form-page .content table .price-cell {
+  position: relative;
+}
+.form-page .content table .price-cell:before {
+  content: "";
+  position: absolute;
+  background: url("../img/vline.png");
+  top: 4px;
+  left: 0;
+  width: 1px;
+  height: 20px;
+}
+.form-page .content table .price-cell:after {
+  content: "";
+  position: absolute;
+  background: url("../img/vline.png");
+  top: 4px;
+  right: 0;
+  width: 1px;
+  height: 20px;
+}
+.form-page .content .payment {
+  max-width: 580px;
+  width: 100%;
+  padding-left: 25px;
+  margin: 0 auto;
+}
+.form-page .content .payment p {
+  float: left;
+  max-width: 180px;
+  width: 100%;
+  text-align: left;
+  padding-top: 25px;
+  color: #000000;
+  font-size: 18px;
+  font-family: "CenturyGothicBold";
+  text-transform: uppercase;
+}
+.form-page .content .payment ul {
+  overflow: hidden;
+  font-size: 0;
+  list-style-image: none;
+  padding-left: 25px;
+}
+.form-page .content .payment ul li {
+  display: inline-block;
+  width: 48px;
+  height: 34px;
+  margin: 0 27px 26px 0;
+}
+.form-page .content .payment ul li a {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.form-page .content .payment ul li:nth-child(1) {
+  background: url("../img/sprites-payments.png") no-repeat 0 0;
+}
+.form-page .content .payment ul li:nth-child(2) {
+  background: url("../img/sprites-payments.png") no-repeat -75px 0;
+}
+.form-page .content .payment ul li:nth-child(3) {
+  background: url("../img/sprites-payments.png") no-repeat -150px 0;
+}
+.form-page .content .payment ul li:nth-child(4) {
+  background: url("../img/sprites-payments.png") no-repeat -224px 0;
+}
+.form-page .content .payment ul li:nth-child(5) {
+  background: url("../img/sprites-payments.png") no-repeat -299px 0;
+  margin: 0 0 26px 0;
+}
+.form-page .content .payment ul li:nth-child(6) {
+  background: url("../img/sprites-payments.png") no-repeat 0 -60px;
+}
+.form-page .content .payment ul li:nth-child(7) {
+  background: url("../img/sprites-payments.png") no-repeat -75px -60px;
+}
+.form-page .content .payment ul li:nth-child(8) {
+  background: url("../img/sprites-payments.png") no-repeat -150px -60px;
+}
+.form-page .content .payment ul li:nth-child(9) {
+  background: url("../img/sprites-payments.png") no-repeat -225px -60px;
+}
+.form-page .content .payment ul li:nth-child(10) {
+  background: url("../img/sprites-payments.png") no-repeat -300px -60px;
+  margin: 0 0 26px 0;
+  width: 49px;
+}
+.form-page .content .form-link {
+  background: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  height: 37px;
+  width: 260px;
+  margin: 35px auto 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'CenturyGothicBold';
+  text-align: center;
+  text-decoration: none;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+.form-page .footer {
+  margin-top: 0;
+}
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 500px;
+  display: none;
+}
+.modal-wrapper #modal-window {
+  display: none;
+  overflow: auto;
+  background: #ffffff;
+  max-width: 860px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 30px auto;
+  padding: 40px 80px 70px 60px;
+  border: 2px solid #ff0048;
+  border-radius: 3px;
+  z-index: 2000;
+}
+.modal-wrapper #modal-window .popup-header {
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+.modal-wrapper #modal-window .popup-header .popup-img {
+  float: left;
+  width: 240px;
+  height: 236px;
+  margin-right: 50px;
+}
+.modal-wrapper #modal-window .popup-header .popup-img img {
+  width: 100%;
+  height: auto;
+}
+.modal-wrapper #modal-window .popup-header .popup-title {
+  padding-top: 50px;
+  overflow: hidden;
+  text-align: left;
+  max-width: 270px;
+  width: 100%;
+}
+.modal-wrapper #modal-window .popup-header .popup-title h3 {
+  color: #000000;
+  font-size: 24px;
+  font-family: "CenturyGothicBold";
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px dotted #273650;
+  line-height: 24px;
+}
+.modal-wrapper #modal-window .popup-header .popup-title span, .modal-wrapper #modal-window .popup-header .popup-title .header .org-name a, .header .org-name .modal-wrapper #modal-window .popup-header .popup-title a {
+  color: #273650;
+  font-family: "CenturyGothicBold";
+  display: inline-block;
+  font-size: 18px;
+}
+.modal-wrapper #modal-window .popup-header .popup-title .prod-price {
+  font-size: 24px;
+  padding-left: 25px;
+}
+.modal-wrapper #modal-window .popup-header .popup-title a {
+  float: right;
+  text-decoration: none;
+  padding: 5px 2px 0 0;
+}
+.modal-wrapper #modal-window .popup-content p {
+  color: #000000;
+  font-size: 14px;
+  font-family: "CenturyGothicRegular";
+  margin-bottom: 15px;
+}
+.modal-wrapper #modal-window .popup-content p .popup-text-bold {
+  font-family: "CenturyGothicBold";
+}
+.modal-wrapper #modal-window .popup-content p span, .modal-wrapper #modal-window .popup-content p .header .org-name a, .header .org-name .modal-wrapper #modal-window .popup-content p a {
+  font-size: inherit;
+  display: block;
+}
+.modal-wrapper #modal-window .close-window {
+  position: absolute;
+  display: block;
+  height: 15px;
+  width: 15px;
+  top: 9px;
+  right: 12px;
+  background: url("../img/close.png");
+  cursor: pointer;
+}
+.modal-wrapper #modal-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: #000;
+  display: none;
+  opacity: 0.5;
+}
