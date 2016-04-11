@@ -1,0 +1,353 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+strong {
+  font-weight: bold;
+}
+textarea, input {
+  outline: medium none;
+}
+textarea {
+  resize: none;
+}
+input:focus, textarea:focus, button:focus {
+  outline: medium none;
+}
+input:active, textarea:active, button:active {
+  outline: medium none;
+}
+ul{
+  list-style: none;
+}
+
+
+@import "compass/css3";
+
+@import "compass/utilities";
+
+
+/* font-family: "ArimoBold"; */
+@font-face {
+    font-family: "ArimoBold";
+    src: url("../fonts/arimobold/arimobold.eot");
+    src: url("../fonts/arimobold/arimobold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/arimobold/arimobold.woff") format("woff"),
+    url("../fonts/arimobold/arimobold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ArimoBoldItalic"; */
+@font-face {
+    font-family: "ArimoBoldItalic";
+    src: url("../fonts/arimobolditalic/arimobolditalic.eot");
+    src: url("../fonts/arimobolditalic/arimobolditalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/arimobolditalic/arimobolditalic.woff") format("woff"),
+    url("../fonts/arimobolditalic/arimobolditalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+$ArimoBold: 'ArimoBold';
+$ArimoBoldItalic: 'ArimoBoldItalic';
+
+.clearfix{
+  clear: both;
+}
+
+.marg_bot_90{
+  margin-bottom: 90px;
+}
+
+* {
+  font-family: $ArimoBold;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+input{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: $ArimoBold;
+  text-transform: uppercase;
+  border: 3px solid #fcf7f7;
+  color: #fcf7f7;
+}
+
+input::-webkit-input-placeholder {color:inherit;}
+input::-moz-placeholder          {color:inherit;}/* Firefox 19+ */
+input:-moz-placeholder           {color:inherit;}/* Firefox 18- */
+input:-ms-input-placeholder      {color:inherit;}
+
+section{
+  padding: 55px 0;
+}
+
+h2{
+  font-family: $ArimoBoldItalic;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+p{
+  font-size: 18px;
+  font-family: $ArimoBold;  
+}
+
+span{
+  font-family: $ArimoBoldItalic;
+  font-size: 18px;
+}
+
+.red{
+  color: #fe2617;
+}
+
+.new_string{
+  display: block;
+}
+
+.btn_main{
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: $ArimoBold;
+  text-transform: uppercase;
+  border: 3px solid #fe2617;
+  color: #fe2617;
+}
+
+
+section.form {
+  padding: 50px 0 80px;
+  background-color: #0d2738;
+  h2{
+    font-family: $ArimoBold;
+    color: #fcf7f7;
+    text-transform: uppercase;
+    span{
+      font-size: inherit;
+      font-family: inherit;
+    }
+  }
+  button:hover{
+    background-color: #fe2617;
+    color: #fcf7f7;
+  }
+  button:active{
+    border: 3px solid #fe3c2f;
+    color: #fcf7f7;
+  }
+}
+
+section.slider{
+  background: url("../img/slider_bg.png");
+  h2{
+    color: #0d2738;
+    margin-bottom: 60px;
+  }
+  .carousel{
+    min-height: 280px;
+    .carousel-indicators{
+        bottom: 0;
+      li{
+        width: 15px;
+        height: 15px;
+        background-color: #0d2738;
+      }
+      li.active{
+        background-color: #fe2617;
+        margin: 1px;
+      }
+    }
+    .carousel-inner{
+      padding-bottom: 40px;
+      .item{
+        p{
+          min-height: 220px;
+          color: #0d2738;
+          line-height: 22px;
+        }
+        span{
+          color: #fe2617;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .carousel-control.left {
+      background-image: none;
+    }
+    .carousel-control.right {
+      background-image: none;
+    }
+  }
+}
+section.advanteges{
+  background-color: #0d2738;
+  position: relative;
+  h2{
+    color: #fcf7f7;
+  }
+  .advanteges_item{   
+    img{
+      margin-bottom: 15px;
+    }
+    span{
+      color: #fcf7f7;
+    }
+  }
+  .advanteges_item:hover{
+    text-decoration: none;
+    position: relative;    
+    &:before{
+      content: "";
+      position: absolute;
+      width: 124px;
+      height: 123px;
+      border: 4px solid #fd2516;
+      border-radius: 50%;
+      top: 0;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;      
+    }
+    span{
+      color: #fd2516;
+    }
+  }
+  .advanteges_text{
+    max-width: 450px;
+    width: 100%;
+    position: absolute;
+    top: 445px;
+    left: 0;
+    right: 0; 
+    margin-left: auto;
+    margin-right: auto;  
+    p{
+      color: #fcf7f7;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+    span{
+      color: #fe2617;
+    }
+  }
+  .btn_wrapper{
+    padding: 90px 30px 0;
+    .btn_main{
+      border: 3px solid #fbfcf7;
+      font-family: $ArimoBoldItalic;
+      font-size: 18px;
+      color: #fcf7f7;
+    }
+    .btn_main:hover{
+      background-color: #fbfcf7;
+      color: #0d2738;
+    }
+  }
+}
+
+
+
+// modal window 
+
+.modal-content {
+  max-width: 460px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 65px 48px 60px;
+  position: relative;
+  background-color: #0d2738;
+}
+
+.modal-content .modal-header{
+  border: none;
+  padding: 0;
+}
+
+.modal-content .modal-header h4{
+  font-family: $ArimoBold;
+  color: #fcf7f7;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 55px;
+}
+
+.modal-content .modal-body form{
+  max-width: 341px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal-content .modal-body form input{
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto 20px;
+  border: 3px solid #fe2617;
+  color: #ffffff;
+}
+
+.modal-content .modal-body form input.marg_bot_40{
+  margin: 0 auto 40px;
+}
+
+.modal-content .modal-body form button{
+  max-width: 300px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.modal-content .modal-body form .btn_main:hover{
+  background-color: #fe2617;
+}
+
+.modal-content .modal-header .close{
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background: url("../img/close-icon.png") no-repeat;
+  top: 20px;
+  right: 19px;
+  font-size: 0;
+  text-indent: -999px;
+  opacity: 1;
+  margin-bottom: 0;
+}
+
+.modal-content .modal-header .close:hover{
+  background: url("../img/close-icon-hover.png") no-repeat;
+}
+
+.modal-dialog {
+    max-width: 460px;
+    width: 100%;
+    margin: 0 auto;
+}
